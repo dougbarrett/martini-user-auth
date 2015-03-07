@@ -17,6 +17,7 @@ This is an example Go Language application that uses the Martini framework, Gorm
 3. Run `go get` to grab all the dependencies
 4. Run `go run *.go` or your favorite live-reload tool to test
 5. If you use the default port, go to http://localhost:3003/ to test!
+6. **The Test e-mail is: test@test.com, and password is `test123`**
 
 ### Questions? Comments?
 
