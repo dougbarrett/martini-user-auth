@@ -13,7 +13,7 @@ This is an example Go Language application that uses the Martini framework, Gorm
 ### How to run:
 
 1. Set up a new database, by default the config will look for the `demo` database
-2. Create a new file named `config.toml` and use the contents of `config.toml.example` to start.  ** Change the SqlConnection variable to your MySQL connection settings**
+2. Create a new file named `config.toml` and use the contents of `config.toml.example` to start.  **Change the SqlConnection variable to your MySQL connection settings**
 3. Run `go get` to grab all the dependencies
 4. Run `go run *.go` or your favorite live-reload tool to test
 5. If you use the default port, go to http://localhost:3003/ to test!
