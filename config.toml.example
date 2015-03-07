@@ -1,0 +1,6 @@
+# The first `doug` is the username, the second is the password, 127.0.0.1:3306 is the address to MySQL and `demo` is the name of the database
+
+SqlConnection = "doug:doug@tcp(127.0.0.1:3306)/demo?parseTime=True"
+SetMaxIdleConns = 10
+SetMaxOpenConns = 100
+DbLogMode = true

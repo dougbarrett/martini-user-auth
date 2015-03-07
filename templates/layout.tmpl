@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Basic Page Needs
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title>Martini User Auth</title>
+
+	<!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<style>
+	body { padding-top:60px;}
+	</style>
+</head>
+<body>
+	<nav class="nav navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="/" class="navbar-brand">Martini User Auth</a>
+			</div>
+			<ul class="nav navbar-nav">
+				{{ if ne .CurrentProfile.Id 0 }}
+				<li>
+					<p class="navbar-text">Hi, {{ .CurrentProfile.Email }}</p>
+				</li>
+				<li>
+					<a href="/profile">My Profile</a>
+				</li>
+				<li>
+					<a href="/logout">Logout</a>
+				</li>
+				{{ else }}
+				<li>
+					<a href="/login">Login</a>
+				</li>
+				<li>
+					<a href="/signup">Signup</a>
+				</li>
+				{{ end}}
+			</ul>
+		</div>
+	</nav>
+	{{ yield }}
+</body>
+</html>
